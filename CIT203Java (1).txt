@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>An Example</title>
+	<script>
+	function showHalfAge(){
+	var ageInputTag = document.getElementById('ageInput');
+	var age = ageInputTag.value;
+	var halfAge= age/2;
+	
+	var theDisplay = document.getElementById('display');
+	theDisplay.innerHTML = "Half Age: "+halfAge;
+	}
+	</script>
+</head>
+<body>
+<input id='ageInput'/>
+<button onclick="showHalfAge()" >clickme</button>
+
+<div id='display'></div>
+
+</body>
+</html>
+	
