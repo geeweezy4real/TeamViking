@@ -1,0 +1,270 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<script = "text/javascript">
+function grainCheck(){
+
+  var checks = new Array();
+
+      checks[0] = document.getElementById("grain1").checked;
+      checks[1] = document.getElementById("grain2").checked;
+      checks[2] = document.getElementById("grain3").checked;
+      checks[3] = document.getElementById("grain4").checked;
+      checks[4] = document.getElementById("grain5").checked;
+      checks[5] = document.getElementById("grain6").checked;
+      checks[6] = document.getElementById("grain7").checked;
+      checks[7] = document.getElementById("grain8").checked;
+
+  var grain = document.getElementById('grain');
+
+  var count = 0;
+  
+  for (var i =0; i< checks.length;i++){
+    if (checks[i] == false){
+      count++;
+    }
+  }
+  if(count == 0){
+    
+        grain.style.color = "yellow";
+  }
+  else{
+
+        grain.style.color = "black";
+  }
+}
+function vegCheck(){
+
+  var checks = new Array();
+
+      checks[0] = document.getElementById("veg1").checked;
+      checks[1] = document.getElementById("veg2").checked;
+      checks[2] = document.getElementById("veg3").checked;
+      checks[3] = document.getElementById("veg4").checked;
+
+  var veg = document.getElementById('veg');
+
+  var count = 0;
+  
+  for (var i =0; i< checks.length;i++){
+    if (checks[i] == false){
+      count++;
+    }
+  }
+  if(count == 0){
+    
+        veg.style.color = "blue";
+  }
+  else{
+
+        veg.style.color = "black";
+  }
+}
+function fruitCheck(){
+
+  var checks = new Array();
+
+      checks[0] = document.getElementById("fruit1").checked;
+      checks[1] = document.getElementById("fruit2").checked;
+      checks[2] = document.getElementById("fruit3").checked;
+    
+
+  var fruit = document.getElementById('fruit');
+
+  var count = 0;
+  
+  for (var i =0; i< checks.length;i++){
+    if (checks[i] == false){
+      count++;
+    }
+  }
+  if(count == 0){
+    
+        fruit.style.color = "orange";
+  }
+  else{
+
+        fruit.style.color = "black";
+  }
+}
+function meatCheck(){
+
+  var checks = new Array();
+
+      checks[0] = document.getElementById("meat1").checked;
+      checks[1] = document.getElementById("meat2").checked;
+      checks[2] = document.getElementById("meat3").checked;
+      checks[3] = document.getElementById("meat4").checked;
+	  checks[4] = document.getElementById("meat5").checked;
+  var meat = document.getElementById('meat');
+
+  var count = 0;
+  
+  for (var i =0; i< checks.length;i++){
+    if (checks[i] == false){
+      count++;
+    }
+  }
+  if(count == 0){
+    
+        meat.style.color = "green";
+  }
+  else{
+
+        meat.style.color = "black";
+  }
+}
+function dairyCheck(){
+
+  var checks = new Array();
+
+      checks[0] = document.getElementById("dairy1").checked;
+      checks[1] = document.getElementById("dairy2").checked;
+      checks[2] = document.getElementById("dairy3").checked;
+    
+
+  var dairy = document.getElementById('dairy');
+
+  var count = 0;
+  
+  for (var i =0; i< checks.length;i++){
+    if (checks[i] == false){
+      count++;
+    }
+  }
+  if(count == 0){
+    
+        dairy.style.color = "red";
+  }
+  else{
+
+        dairy.style.color = "black";
+  }
+}
+function waterCheck(){
+
+  var checks = new Array();
+
+      checks[0] = document.getElementById("water1").checked;
+      checks[1] = document.getElementById("water2").checked;
+      checks[2] = document.getElementById("water3").checked;
+      checks[3] = document.getElementById("water4").checked;
+      checks[4] = document.getElementById("water5").checked;
+      checks[5] = document.getElementById("water6").checked;
+      checks[6] = document.getElementById("water7").checked;
+      checks[7] = document.getElementById("water8").checked;
+
+  var water = document.getElementById('water');
+
+  var count = 0;
+  
+  for (var i =0; i< checks.length;i++){
+    if (checks[i] == false){
+      count++;
+    }
+  }
+  if(count == 0){
+    
+        water.style.color = "pink";
+  }
+  else{
+
+        water.style.color = "black";
+  }
+}
+function exerCheck(){
+
+  var checks = new Array();
+
+      checks[0] = document.getElementById("exer1").checked;
+      checks[1] = document.getElementById("exer2").checked;
+      checks[2] = document.getElementById("exer3").checked;
+      checks[3] = document.getElementById("exer4").checked;
+      checks[4] = document.getElementById("exer5").checked;
+      checks[5] = document.getElementById("exer6").checked;
+
+
+  var exer = document.getElementById('exer');
+
+  var count = 0;
+  
+  for (var i =0; i< checks.length;i++){
+    if (checks[i] == false){
+      count++;
+    }
+  }
+  if(count == 0){
+    
+        exer.style.color = "brown";
+  }
+  else{
+
+        exer.style.color = "black";
+  }
+}
+</script>
+</head>
+<body>
+
+  <h1 id="title">Daily Nutritional Plan 2000 Calories</h1>
+    <button type="button" 
+      onclick="document.getElementById('title').style.color='red'">
+        Click Me!</button>
+
+  <h2 id="grain">Grains</h2>
+    <input type="checkbox" id="grain1" onclick = "grainCheck()">
+    <input type="checkbox" id="grain2" onclick = "grainCheck()">
+    <input type="checkbox" id="grain3" onclick = "grainCheck()">
+    <input type="checkbox" id="grain4" onclick = "grainCheck()">
+    <input type="checkbox" id="grain5" onclick = "grainCheck()">
+    <input type="checkbox" id="grain6" onclick = "grainCheck()">
+    <input type="checkbox" id="grain7" onclick = "grainCheck()">
+    <input type="checkbox" id="grain8" onclick = "grainCheck()">
+
+  <h2 id="veg">Vegetables</h2>
+    <input type="checkbox" id="veg1" onclick = "vegCheck()">
+    <input type="checkbox" id="veg2" onclick = "vegCheck()">
+    <input type="checkbox" id="veg3" onclick = "vegCheck()">
+    <input type="checkbox" id="veg4" onclick = "vegCheck()">
+
+  <h2 id="fruit">Fruits</h2>
+    <input type="checkbox" id="fruit1" onclick = "fruitCheck()">
+    <input type="checkbox" id="fruit2" onclick = "fruitCheck()">
+    <input type="checkbox" id="fruit3" onclick = "fruitCheck()">
+ 
+
+
+  <h2 id="meat">Meats/Beans</h2>
+    <input type="checkbox" id="meat1" onclick = "meatCheck()">
+    <input type="checkbox" id="meat2" onclick = "meatCheck()">
+    <input type="checkbox" id="meat3" onclick = "meatCheck()">
+    <input type="checkbox" id="meat4" onclick = "meatCheck()">
+	<input type="checkbox" id="meat5" onclick = "meatCheck()">
+  <h2 id="dairy">Dairy</h2>
+    <input type="checkbox" id="dairy1" onclick = "dairyCheck()">
+    <input type="checkbox" id="dairy2" onclick = "dairyCheck()">
+    <input type="checkbox" id="dairy3" onclick = "dairyCheck()">
+
+  <h2 id="water">Water</h2>
+    <input type="checkbox" id="water1" onclick = "waterCheck()">
+    <input type="checkbox" id="water2" onclick = "waterCheck()">
+    <input type="checkbox" id="water3" onclick = "waterCheck()">
+    <input type="checkbox" id="water4" onclick = "waterCheck()">
+    <input type="checkbox" id="water5" onclick = "waterCheck()">
+    <input type="checkbox" id="water6" onclick = "waterCheck()">
+    <input type="checkbox" id="water7" onclick = "waterCheck()">
+    <input type="checkbox" id="water8" onclick = "waterCheck()">
+
+<h2 id="exer">Exercise</h2>
+    <input type="checkbox" id="exer1" onclick = "exerCheck()">
+    <input type="checkbox" id="exer2" onclick = "exerCheck()">
+    <input type="checkbox" id="exer3" onclick = "exerCheck()">
+    <input type="checkbox" id="exer4" onclick = "exerCheck()">
+    <input type="checkbox" id="exer5" onclick = "exerCheck()">
+    <input type="checkbox" id="exer6" onclick = "exerCheck()">
+
+
+
+</body>
+</html>
