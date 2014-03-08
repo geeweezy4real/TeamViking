@@ -4,7 +4,7 @@
 <head>
 <style>
 .wrapper {
-
+float:left:
 
 }
 label {
@@ -265,7 +265,7 @@ function exerCheck(){
     <input type="checkbox" id="water8" onclick = "waterCheck()">
 	<br>
 	
-    <label id = exer></label>Exercise<input type="checkbox" id="exer1" onclick = "exerCheck()">
+    <label id = exer>Exercise</label><input type="checkbox" id="exer1" onclick = "exerCheck()">
     <input type="checkbox" id="exer2" onclick = "exerCheck()">
     <input type="checkbox" id="exer3" onclick = "exerCheck()">
     <input type="checkbox" id="exer4" onclick = "exerCheck()">
@@ -273,5 +273,25 @@ function exerCheck(){
     <input type="checkbox" id="exer6" onclick = "exerCheck()">
 	
 </div>
+<p>and the node changes. <a href="javascript:test('bold bit of text')" class="page">Try it</a> and change
+it <a href="javascript:test('paragraph')" class="page">back again</a>.</p>
+<script type="text/javascript">
+<!--
+function test(txt) {
+	if (document.getElementById && document.createElement)
+		document.getElementById('hereweare').firstChild.nodeValue=txt;
+	else alert('Your browser doesn\'t support the Level 1 DOM');
+}
+
+function test2(val) {
+	if (document.getElementById && document.createElement) {
+		node = document.getElementById('hereweare').parentNode;
+		node.setAttribute('align',val);
+	}
+	else alert('Your browser doesn\'t support the Level 1 DOM');
+}
+// -->
+</script>
+<p align="right">This is a <b id="hereweare">paragraph</b></p>
 </body>
 </html>
